@@ -1,21 +1,46 @@
-- [html-css-js-template](#html-css-js-template)
-  - [Consegna base](#consegna-base)
-  - [Consegna bonus](#consegna-bonus)
-  - [Svolgimento base](#svolgimento-base)
+- [js-our-team](#js-our-team)
+  - [Consegna](#consegna)
+      - [MILESTONE 0](#milestone-0)
+      - [MILESTONE 1](#milestone-1)
+      - [MILESTONE 2](#milestone-2)
+  - [BONUS 1](#bonus-1)
+  - [BONUS 2](#bonus-2)
+  - [Consigli](#consigli)
     - [Pagina da replicare](#pagina-da-replicare)
-    - [Analisi tecnica](#analisi-tecnica)
-    - [Risultato ottenuto](#risultato-ottenuto)
 
-# html-css-js-template
+# js-our-team
 
-## Consegna base
+## Consegna
 
-## Consegna bonus
+Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
 
-## Svolgimento base
+Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
+
+#### MILESTONE 0
+
+Creare l’array di oggetti con le informazioni fornite nella tabella qui sotto.
+
+#### MILESTONE 1
+
+Stampare su console le informazioni di nome, ruolo e la stringa della foto
+
+#### MILESTONE 2
+
+Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+## BONUS 1
+
+Trasformare la stringa foto in una immagine effettiva
+
+## BONUS 2
+
+Organizzare i singoli membri in card/schede
+
+## Consigli 
+Ragioniamo come sempre a step. Prima la logica in italiano e poi traduciamo in codice.
+E ricordiamoci che console.log() è nostro amico!
 
 ### [Pagina da replicare](./img/screenshot/exercise/)
 
-### [Analisi tecnica](./img/screenshot/analysis/)
+<img src="./img/screenshot/exercise/to-emulate.png" width=700>
 
-### [Risultato ottenuto](./index.html)
