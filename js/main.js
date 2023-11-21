@@ -43,5 +43,20 @@ function printArrayObjects(arrayOfObject) {
     }
 }
 
+// MILESTONE 2
 
+/**
+ * Dato un elemento HTML aggiunge, sottoforma di figli, n card, dove n
+ * è la lunghezza di arrayOfObject.
+ */
+function createCards(htmlElement, arrayOfObject) {
+    for (let i = 0; i < arrayOfObject.length; i++) {
+        let p = document.createElement("p")
+        p.innerHTML += arrayOfObject[i].fullName
+        htmlElement.appendChild(p)
+    }
+}
 
+// Prendiamo l'elemento HTML contenente le card
+let cardContainer = document.getElementById("cardContainer")
+createCards(cardContainer, array)
