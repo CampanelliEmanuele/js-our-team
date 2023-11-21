@@ -4,32 +4,33 @@ let array = [
     {
         fullName: "Tizio Caio 1",
         role: "Developer",
-        image: "angela-caroll-chief-editor.jpg"
+        image: "./img/assets/angela-caroll-chief-editor.jpg"
+        
     },
     {
         fullName: "Tizio Caio 2",
         role: "Developer",
-        image: "angela-caroll-chief-editor.jpg"
+        image: "./img/assets/angela-caroll-chief-editor.jpg"
     },
     {
         fullName: "Tizio Caio 3",
         role: "Developer",
-        image: "angela-caroll-chief-editor.jpg"
+        image: "./img/assets/angela-caroll-chief-editor.jpg"
     },
     {
         fullName: "Tizio Caio 4",
         role: "Developer",
-        image: "angela-caroll-chief-editor.jpg"
+        image: "./img/assets/angela-caroll-chief-editor.jpg"
     },
     {
         fullName: "Tizio Caio 5",
         role: "Developer",
-        image: "angela-caroll-chief-editor.jpg"
+        image: "./img/assets/angela-caroll-chief-editor.jpg"
     },
     {
         fullName: "Tizio Caio 6",
         role: "Developer",
-        image: "angela-caroll-chief-editor.jpg"
+        image: "./img/assets/angela-caroll-chief-editor.jpg"
     }
 ];
 
@@ -45,18 +46,28 @@ function printArrayObjects(arrayOfObject) {
 
 // MILESTONE 2
 
+// Prendiamo l'elemento HTML contenente le card
+let cardContainer = document.getElementById("cardContainer")
+createCards(cardContainer, array)
+
 /**
  * Dato un elemento HTML aggiunge, sottoforma di figli, n card, dove n
  * è la lunghezza di arrayOfObject.
  */
-function createCards(htmlElement, arrayOfObject) {
+function createCards(cardContainer, arrayOfObject) {
     for (let i = 0; i < arrayOfObject.length; i++) {
-        let p = document.createElement("p")
-        p.innerHTML += arrayOfObject[i].fullName
-        htmlElement.appendChild(p)
+        cardContainer.innerHTML += `
+        <!-- CARD ${i} -->
+        <div class="col col-sm-6 col-md-6 col-lg-4">
+            <div class="card text-center">
+                <img src="${arrayOfObject[i].image}" class="card-img-top" alt="cabine-image">
+                <div class="card-body">
+                    <h5 class="card-title">${arrayOfObject[i].fullName}</h5>
+                    <h6 class="card-text">${arrayOfObject[i].role}</h6>
+                </div>
+            </div>
+        </div>
+        `
     }
 }
 
-// Prendiamo l'elemento HTML contenente le card
-let cardContainer = document.getElementById("cardContainer")
-createCards(cardContainer, array)
