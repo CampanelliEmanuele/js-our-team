@@ -5,7 +5,7 @@ let array = [
         fullName: "Tizio Caio 1",
         role: "Developer",
         image: "./img/assets/angela-caroll-chief-editor.jpg"
-        
+
     },
     {
         fullName: "Tizio Caio 2",
@@ -71,3 +71,40 @@ function createCards(cardContainer, arrayOfObject) {
     }
 }
 
+// MILESTONE 2 v2 (to fix)
+
+/**
+function createElement(tag, attribute, values) {
+    let newEl = document.createElement(tag);
+    newEl.setAttribute(attribute, values);
+    return newEl;
+}
+
+let cardContainer = document.createElement("cardContainer")
+
+for (let i = 0; i < array.length; i++) {
+    let divCol = createElement("div", "class", "col col-sm-6 col-md-6 col-lg-4")
+    let divCardContainer = createElement("div", "class", "card text-center")
+
+    let cardImg = createElement("img", "src", arrayOfObject[i].image)
+    cardImg.setAttribute("class", "card-img-top")
+    cardImg.setAttribute("alt", "cabine-image")
+
+    let cardBody = createElement("div", "class", "card-body")
+
+    let cardTitle = createElement("h5", "class", "card-title")
+    cardTitle.innerHTML += arrayOfObject[i].fullName
+
+    let cardText = createElement("h6", "class", "card-text")
+    cardText.innerHTML += arrayOfObject[i].role
+
+
+    cardBody.appendChild(cardTitle)
+    cardBody.appendChild(cardText)
+    divCardContainer.appendChild(img)
+    divCardContainer.appendChild(cardBody)
+
+    divCol.appendChild(divCardContainer)
+
+}
+ */
